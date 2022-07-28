@@ -15,14 +15,14 @@ $("#button").on("click", function () {
 });
 
 $(".recipes").on("click", ".img", function () {
-  let x = $(this).closest(".recept").find("li");
-  x = x.text();
+  let textFromLi = $(this).closest(".recept").find("li");
+  textFromLi = textFromLi.text();
 
-  for (let i in x) {
-    if (x[i] == " ") {
-      x = x.slice(0, i);
+  for (let i in textFromLi) {
+    if (textFromLi[i] == " ") {
+      textFromLi = textFromLi.slice(0, i);
       break;
     }
   }
-  alert(x);
+  alert(textFromLi);
 });
