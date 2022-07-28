@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <script id="recept-container" type="text/x-handlebars-template">
+    <div class="recept">
+      <a href="{{youtubeLink}}"><div class="title"> {{title}}</div></a>
+
+      <div class="img"><img src={{img}} /></div>
+
+      <div class="ingredients">
+        {{#each ingredients}}
+          <li>{{this}} </li>
+        {{/each}}
+      </div>
+    </div>
+  </script>
+  <body>
+    <div class="searchBar">
+      <div class="text"><input type="text" name="" id="text" /></div>
+      <div class="button">
+        <input type="button" id="button" value="Search" />
+      </div>
+    </div>
+    <div class="recipes"></div>
+  </body>
+  <script src="./handlebars/dist/handlebars.js"></script>
+  <script src="./jquery/dist/jquery.js"></script>
+  <script src="render.js"></script>
+  <script src="main.js"></script>
+</html>

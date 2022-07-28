@@ -1,0 +1,86 @@
+.searchBar {
+  width: 100%;
+}
+.searchBar > div {
+  display: inline-block;
+}
+.text {
+  width: 87%;
+  margin-right: 2%;
+}
+#text {
+  width: 100%;
+  height: 40px;
+  border-radius: 20%;
+  font-size: 20px;
+}
+#button {
+  width: 300%;
+  height: 40px;
+  border-radius: 40%;
+}
+
+.title {
+  margin-top: 15px;
+  font: 30px bold;
+  color: red;
+  display: grid;
+  text-align: center;
+}
+
+.youtubeLink {
+  size: 22px;
+  color: cadetblue;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.recipes {
+  display: grid;
+  border-radius: 12px;
+
+  grid-template-columns: 1fr 1fr;
+
+  border-radius: 7px;
+  margin-top: 20px;
+
+  background-color: #bdc3c7;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.recept {
+  display: grid;
+
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 12px;
+  background-color: bisque;
+  border: 3px green solid;
+}
+img {
+  display: grid;
+  width: 55%;
+  height: 55%;
+  border-radius: 12px;
+}
+.img {
+  display: grid;
+  place-items: center;
+}
+a {
+  font-size: 14px;
+}
+.ingredients {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 45px;
+  margin-left: 20%;
+}
+li {
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+.youtubeLink {
+  margin-left: 15px;
+}
